@@ -23,9 +23,9 @@ Apache Tomcat = 6
 任意文件读取
 ```py -2 CNVD-2020-10487-Tomcat-Ajp-lfi.py 127.0.0.1 -p 8009 -f WEB-INF/web.xml```  
 ![漏洞截图](https://github.com/bmjoker/poc/blob/master/Tomcat/2.png)  
-
-于2020.03.02补充
-网上出现了批量刷取AJP漏洞的脚本
+  
+于2020.03.02补充  
+网上出现了批量刷取AJP漏洞的脚本  
 参考链接：https://github.com/Kit4y/CNVD-2020-10487-Tomcat-Ajp-lfi-Scanner
 
 # 漏洞修复：  
